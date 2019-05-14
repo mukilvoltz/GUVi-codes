@@ -1,7 +1,5 @@
-a=int(input())
-
-b=int(input())
-
-c=int(input())
-
+a,b,c=input().split()
+a=int(a)
+b=int(b)
+c=int(c)
 print(max(a,b,c))
