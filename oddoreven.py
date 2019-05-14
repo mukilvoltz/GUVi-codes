@@ -1,5 +1,5 @@
-a=raw_input()
+a=input("enter a number")
 if a % 2 == 0:
-print("Positive")
+    print("Even")
 else:
-print("Negative")
+    print("Odd")
