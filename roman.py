@@ -7,5 +7,5 @@ for i in range(0,n):
     elif a[i] == "V":
         s=s+5
     elif a[i] == "I":
-        s=s+1
+        s=s-1
 print(s)    
