@@ -10,5 +10,5 @@ def prime(a):
             break
     if c == 0:
         print(a, end =" ")
-for j in range (p,q):
+for j in range (p+1,q):
     prime(j)
