@@ -1,2 +1,2 @@
-a=str(input())
-print(len(a))
+p=str(input())
+print(len(p))
