@@ -6,5 +6,5 @@ for j in range (2,lop+1):
         cop=1
         print("no")
         break
-if c == 0:
+if cop == 0:
     print("yes")
