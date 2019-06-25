@@ -1,1 +1,3 @@
-print(input())
+p=input()
+q=str(p)
+print(q)
