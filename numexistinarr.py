@@ -8,5 +8,5 @@ for i in arr:
         print("yes")
         c=1
         break
-if c == 0
+if c == 0:
     print("no")
