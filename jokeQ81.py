@@ -1,0 +1,5 @@
+i,j=input().split()
+i=int(i)
+j=int(j)
+k=abs(i-j)
+print(k)
