@@ -18,11 +18,11 @@ if c==0:
                 if (a[i+1]=="X"):
                     su=su+9
                     i=i+1
-        else:
-            if(a[i]=="I"):
-                su=su+1
-            if(a[i]=="V"):
-                su=su+5
-            if(a[i]=="X"):
-                su=su+10
+            else:
+                if(a[i]=="I"):
+                    su=su+1
+                if(a[i]=="V"):
+                    su=su+5
+                if(a[i]=="X"):
+                    su=su+10
 print(su)
