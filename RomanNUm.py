@@ -11,19 +11,20 @@ if c==0:
     a=a+"0"
     s=len(a)-1
     for i in range(0, len(a)):
-        if (a[i]=="I" and a[i+1]=="V" or a[i+1]=="X"):
-            if (a[i+1]=="V"):
-                su=su+i
-                i=i+1
-                break
-            if (a[i+1]=="X"):
-                su=su+9
-                i=i+1
-                break
+        if (a[i]!="0"):
+            if (a[i]=="I" and (a[i+1]=="V" or a[i+1]=="X")):
+                if (a[i+1]=="V"):
+                    su=su+4
+                    i=i+1
+                    break
+                if (a[i+1]=="X"):
+                    su=su+9
+                    i=i+1
+                    break
         if(a[i]=="I"):
             su=su+1
         elif(a[i]=="V"):
             su=su+5
         elif(a[i]=="X"):
             su=su+10
-print(su)
+    print(su)
