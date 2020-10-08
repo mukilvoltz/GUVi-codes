@@ -8,22 +8,22 @@ def numtoword(number):
 	ntowten={'1':'eleven','2': 'Twelve','3':'Thirteen','4':'Fourteen','5':'fifteen','6':'Sixteen','7':'Seventeen','8':'Eighteen','9':'Nineeten'}
 	words=[]
 	if len(number)==3:
-		words[0]=ntowones[number[0]]
-		words[1]='hundred'
-		words[2]='and'
+		words.append(ntowones[number[0]])
+		words.append('hundred')
+		words.append('and')
 		if number[1]=="1":
-			words[3]=ntowtens[number[1]]
-			words[4]=ntowones[number[2]]
+			words.append(ntowtens[number[1]])
+			words.append(ntowones[number[2]])
 		else:
-			words[3]=ntowten[number[2]]
+			words.append(ntowten[number[2]])
 	if len(number)==2:
 		if number[0]=="1":
-			words[0]=ntowtens[number[1]]
-			words[1]=ntowones[number[2]]
+			words.append(ntowtens[number[1]])
+			words.append(ntowones[number[2]])
 		else:
-			words[0]=ntowten[number[2]]
+			words.append(ntowten[number[2]])
 	if len(number)==1:
-		words[0]=ntowones[number[0]]
+		words.append(ntowones[number[0]])
 	return words
 def filewrite(num2words):
 	fh.write(num2words)
