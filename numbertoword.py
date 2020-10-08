@@ -11,17 +11,20 @@ def numtoword(number):
 		words.append(ntowones[number[0]])
 		words.append('hundred')
 		words.append('and')
-		if number[1]=="1":
+		if number[1]!="1":
 			words.append(ntowtens[number[1]])
-			words.append(ntowones[number[2]])
+			if number[2]!="0":
+			    words.append(ntowones[number[2]])
 		else:
-			words.append(ntowten[number[2]])
+		    if number[2]!="0":
+			    words.append(ntowten[number[2]])
 	if len(number)==2:
-		if number[0]=="1":
-			words.append(ntowtens[number[1]])
-			words.append(ntowones[number[2]])
+		if number[0]!="1":
+			words.append(ntowtens[number[0]])
+			if number[1]!="0":
+			    words.append(ntowones[number[1]])
 		else:
-			words.append(ntowten[number[2]])
+			words.append(ntowten[number[1]])
 	if len(number)==1:
 		words.append(ntowones[number[0]])
 	return words
